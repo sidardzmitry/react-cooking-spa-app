@@ -1,0 +1,163 @@
+@import "./scss/variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: $bg-color;
+  overflow-x: hidden;
+}
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+input,
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+button,
+input[type="submit"] {
+  background: none;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  // vertical-align: top;
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 15px 15px;
+}
+.main {
+  min-height: calc(100vh - 63px - 95.4px);
+}
+.recipe {
+  color: $color-blue;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    max-width: 50%;
+    line-height: 1.5;
+    img {
+      border-radius: 4px;
+    }
+    @media(max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+  &__title{
+    font-size: 23px;
+  }
+  &__category{
+    font-size: 21px;
+  }
+  &__area{
+    font-size: 19px;
+  }
+  &__instructions{
+    font-size: 16px;
+  }
+  &__row{
+    width: 100%;
+  }
+  &__row-title{
+    font-size: 21px;
+  }
+  &__row-video{
+    margin-top: 10px;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 4px;
+  }
+  b {
+    text-shadow: $color-text-shadow;
+    color: $color-blue;
+  }
+}
+.btn-category {
+  margin-bottom: 20px;
+  background: $color-blue;
+  border: 2px solid $color-blue;
+  border-radius: 4px;
+  color: $color-text-white;
+  transition: 0.2s;
+  &:hover {
+    background: $bg-color;
+    color: $color-blue;
+  }
+}

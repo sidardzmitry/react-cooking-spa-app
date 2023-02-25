@@ -1,0 +1,53 @@
+@import '../../scss/variables.scss';
+
+.item {
+    flex: 1 1 25%;
+    @media(max-width: 1070px) {
+        flex: 1 1 33.33%;
+    }
+    @media(max-width: 678px) {
+        flex: 1 1 50%;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $color-purple;
+    box-shadow: $color-border-shadow;
+    background: transparent;
+    padding: 15px;
+    color: $color-blue;
+    border-radius: 4px;
+    row-gap: 20px;
+}
+.content {
+    flex-grow: 1;
+}
+.action {
+    width: 100%;
+}
+.btn {
+    border: 1px solid $color-blue;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background: transparent;
+    &:hover {
+        background-color: $color-blue;
+        transition: 0.2s;
+        border: 1px solid $color-text-white;
+        color: $color-text-white;
+    }
+}
+.title {
+    font-size: 21px;
+    font-weight: 600;
+}
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}

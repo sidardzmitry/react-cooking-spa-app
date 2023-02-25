@@ -1,0 +1,35 @@
+@import "../../scss/variables.scss";
+
+.row {
+  position: relative;
+  &__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__input {
+    width: 100%;
+    color: $color-blue;
+    &::placeholder {
+      color: $color-blue;
+    }
+  }
+  &__btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: $color-blue;
+    border: 2px solid $color-blue;
+    border-radius: 4px;
+    color: $color-text-white;
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      background: $bg-color;
+      color: $color-blue;
+    }
+  }
+}

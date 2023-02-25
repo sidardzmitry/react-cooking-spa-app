@@ -1,0 +1,62 @@
+@import "../../scss/variables.scss";
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: $color-blue;
+  color: $color-text-white;
+  font-size: 16px;
+  &__left {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  &__date {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__author {
+  }
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+  }
+  &__icons{
+    font-size: 30px;
+    .linkedin {
+      &:hover {
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-light-blue;
+      }
+    }
+    .git {
+      &:hover {
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-light-blue;
+      }
+    }
+  }
+  &__right {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media(max-width: 540px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
