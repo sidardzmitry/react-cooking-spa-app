@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-cooking-spa-app/static/css/main.997275af.css",
-    "main.js": "/react-cooking-spa-app/static/js/main.aacbcd71.js",
+    "main.js": "/react-cooking-spa-app/static/js/main.d4fa2ee6.js",
     "index.html": "/react-cooking-spa-app/index.html",
     "main.997275af.css.map": "/react-cooking-spa-app/static/css/main.997275af.css.map",
-    "main.aacbcd71.js.map": "/react-cooking-spa-app/static/js/main.aacbcd71.js.map"
+    "main.d4fa2ee6.js.map": "/react-cooking-spa-app/static/js/main.d4fa2ee6.js.map"
   },
   "entrypoints": [
     "static/css/main.997275af.css",
-    "static/js/main.aacbcd71.js"
+    "static/js/main.d4fa2ee6.js"
   ]
 }
